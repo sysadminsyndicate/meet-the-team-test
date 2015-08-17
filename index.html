@@ -1,218 +1,478 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>
-Hex Background
-</title>
-<style type = "text/css">
-html, body, canvas {
-  height: 100%;
-}
-html {
-  overflow: hidden;
-  background: #020202;
-}
-body {
-  margin: 0;
-}
-canvas {
-  position: absolute;
-  width: 100%;
-}
-</style>
+<title> Team Page </title>
+<link rel="shortcut icon" href="img/12.png" type="image/x-icon" />
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "css/bootstrap.min.css">
+<link rel = "stylesheet" href = "css/style1.css">
+  <link rel="stylesheet" href="css/modal.css">
+<script src = "js/jquery.min.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!---- start-smoth-scrolling---->
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
 </head>
+
 <body>
-<canvas></canvas>
-<canvas></canvas>
-<script type = "text/javascript">
-/* because me lazy */
-Object.getOwnPropertyNames(Math).map(function(p) {
-		window[p] = Math[p];
+<div></div>
+<!---- parent part of the team page : head and links ---->
+<div class="container-full" id="home">
+
+      <div class="row">
+       
+        <div class="col-lg-12 text-center v-center">
+          
+          <big><h1>Sysadmin Syndicate</h1></big>
+          
+          <br> 
+          <h1> Meet The Team </h1>
+          <br> 
+          <big><ul class="list-inline social-buttons">
+                            <li><a href="https://facebook.com/"><img src="img/11.png" class="icon"></a>
+                            </li>
+                            <li><a href="https://plus.google.com/"><img src="img/7.png" class="icon"></a>
+                            </li>
+                            <li><a href="mailto:"><img src="img/3.png" class="icon"></a></li>
+                            <li><a href="http://sysadminsyndicate.com"><img src="img/12.png"  height="40px" width="40px" class="icon"></a></li>
+                            <li><a href="https://linkedin.com/"><img src="img/1.png" height="45px" width="45px" class="link"></a>
+                            </li>
+                            <li><a href="https://github.com/"><img src="img/4.svg" class="icon"></a></li>
+                            <li><a href="https://youtube.com"><img src="img/2.png" class="icon"></a></li>
+                             <li><a href="https://twitter.com/"><img src="img/8.png" class="icon"></a></li>
+                             
+                        </ul>     
+          <br>
+          <br>
+          <br> 
+          <a href="#team" class="scroll top"><center><img class = "down" src="img/dwn.png"></center> </big></a>
+          <br> 
+          <br> 
+
+<br>           <br> 
+          <br> 
+<br>           <br> 
+<br> 
+<!---- shead part over ---->
+
+<!---- Team members area ---->
+          <div class="container" id="team">
+  	<div class="row">
+
+      <!---- jacob graham's short info ---->
+   <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h3>
+            <img src="bio/jakebio.jpg" class = "person test " data-toggle="tooltip" data-placement="top" title="Jacob Graham"></img>
+            </h3>
+
+            <!-- personal info -->
+		<ul class="list-inline social-buttons">
+                            <li><a href="http://facebook.com/">
+                              <img src="img/11.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://plus.google.com/">
+                              <img src="img/7.png" class="icon"></a>
+                            </li>
+                                 
+                            <li><a href="http://linkedin.com/">
+                              <img src="img/1.png" height="40px" width="40px" class="link"></a>
+                            </li>
+                             <li><a href="http://twitter.com/">
+                              <img src="img/8.png" class="icon"></a></li>
+                             <button type="button" class="btn btn-info btn-md" id="myBtn">me</button>
+            <!-- personal info over -->
+
+<!---- short info part over ---->
+
+<!---- jacob graham's full bio here : popup ---->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><img src="bio/jakebio.jpg" class="img-bio"><center>
+          <h4 class="modal-title">Jacob Graham</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Founder / Lead Microsoft Trainer and Content Writer</b>
+<br><br>
+Jacob Graham is a Technical Support Analyst who is truly committed to his studies in the IT field. He has a strong passion for virtualization, e-mail, Windows and UNIX system administration.
+<br><br>Jacob is very dedicated to not only his studies but also to building strong business relationships with integrity and commitment backed with outstanding customer service skills. In his spare time he enjoys spending time with his two daughters and learning guitar.This modal has a dark overlay.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><small>Exit</small></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>  
+                        </ul>       
+                             
+            </div>
+            <div class="panel-body"><p> Founder / Lead Microsoft Trainer and Content Writer </p>
+            </div>
+          </div>
+        </div>
+      	<!---- bio's end ---->
+
+
+        <!---- george shruthin's short info ---->
+      	<div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3>
+              <img src="bio/fb.jpg" class = "person test" data-toggle="tooltip" data-placement="top" title="George Shruthin"></img></h3>
+              <!-- personal info -->
+		<ul class="list-inline social-buttons">
+                            <li><a href="http://facebook.com/">
+                              <img src="img/11.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://plus.google.com/">
+                              <img src="img/7.png" class="icon"></a>
+                            </li>
+                               
+                            <li><a href="http://linkedin.com/">
+                              <img src="img/1.png" height="40px" width="40px" class="link"></a>
+                            </li>
+                            <li><a href="http://twitter.com/">
+                              <img src="img/8.png" class="icon"></a></li>
+                            <button type="button" class="btn btn-info btn-md" id="myBtn1">me</button>
+                            <!-- personal info over-->
+
+<!---- short info part over ---->
+
+<!---- george shruthin's full bio : popup ---->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><img src="bio/fb.jpg" class="img-bio"><center>
+          <h4 class="modal-title">George Shruthin</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Web Designer</b>
+<br><br>
+George is an HP Certified Server Support Engineer, a real IT enthusiast.  <br>
+He loves computer hardware and blogging/learning about new IT related things!  
+ <br>He spends most of the nighttime with his PC, running the Sysadmin Syndicate website.<br><br>
+ His Website : <a style="color:black" href="http://juz4fun.com"><big>Juz 4 Fun</big></a> 
+ </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><small>Exit</small></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>  
+                        </ul>            
+            </div>
+            <div class="panel-body"><p> Web Designer </p>
+            </div>
+          </div>
+        </div>
+        <!---- george shruthin's bio part over ---->
+
+        <!---- short bio of rishi giri starts ---->
+           <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3><img src="bio/rishi.jpg" class = "person test" data-toggle="tooltip" data-placement="top" title="Rishi Giri"></img></h3>
+              <!-- personal info -->
+		<ul class="list-inline social-buttons">
+                            <li><a href="http://facebook.com/rishi.giri.90">
+                              <img src="img/11.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://plus.google.com/">
+                              <img src="img/7.png" class="icon"></a>
+                            </li>       
+                            <li><a href="http://linkedin.com/">
+                              <img src="img/1.png" height="40px" width="40px" class="link"></a>
+                            </li>
+                             <li><a href="http://twitter.com/">
+                              <img src="img/8.png" class="icon"></a>
+                            </li>
+                                                         <button type="button" class="btn btn-info btn-md" id="myBtn2">me</button>
+              <!-- personal info over -->
+
+<!---- short bio over ---->
+
+<!---- rishi giri's full bio : popup ---->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><img src="bio/rishi.jpg" class="img-bio"><center>
+          <h4 class="modal-title">Rishi Giri { DotJS }</h4>
+        </div>
+        <div class="modal-body">
+        <p><b>Web Developer, Python - JavaScript and FOSS Enthusiast</b><br><br>
+ Rishi Giri is a Web Developer from India, his main areas of interests include coding in JavaScript and Python for
+ building new stuffs.
+<br><br> 
+<a href="https://github.com/CodeDotJS"><img src = "img/github.png" class="icon"></img>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><small>Exit</small></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+                        </ul>            
+            </div>
+            <div class="panel-body"> <p> Web Developer, JavaScript & Python Enthusiast </p>
+            </div>
+          </div>
+        </div>
+      <!---- rishi's full bio part over ---->
+
+      <!-- short bio of seth -->
+      <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3>
+              <img src="bio/bio.jpg" class = "person test" data-toggle="tooltip" data-placement="top" title="Seth Ainsley"></img></h3>
+   <!-- personal info -->
+    <ul class="list-inline social-buttons">
+                            <li><a href="http://facebook.com/">
+                              <img src="img/1.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://plus.google.com/">
+                              <img src="img/7.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://linkedin.com/">
+                              <img src="img/1.png" height="40px" width="40px" class="link"></a>
+                            </li>
+                             <li><a href="http://twitter.com/">
+                              <img src="img/8.png" class="icon"></a></li>
+                             <button type="button" class="btn btn-info btn-md" id="myBtn4">me</button>
+                             <!-- personal info over -->
+<!-- shet's short bio ends -->
+  
+  <!-- Full bio of seth  : popup -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><img src="bio/bio.jpg" class="img-bio"><center>
+          <h4 class="modal-title">Seth Ainsley</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Site Administrator / Lead Cisco & VMware Trainer and Content Writer</b>
+<br><br>
+Seth is a Cisco certified networking professional with specialization in emerging datacenter and virtualization technologies. <br>
+When not at work, Seth's hobbies include discussing and studying for certifications, cooking, and hiking.<br> 
+ He lives in Victoria, Canada with his wife and occasionally ferocious cat.
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><small>Exit</small></button>
+        </div>
+      </div>
+                        </ul>            
+            </div>
+            <div class="panel-body">
+<p>
+Site Administrator / Lead Cisco & VMware Trainer</p>
+            </div>
+          </div>
+        </div>
+        <!-- full bio of seth ends -->
+
+
+<!-- short bio of saket bakshi starts -->
+                   <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3><img src="bio/saketbio.jpg" class = "person test " data-toggle="tooltip" data-placement="top" title="Saket Saurabh"></img></h3>
+              <!-- personal info -->
+		<ul class="list-inline social-buttons">
+		
+                            <li><a href="http://facebook.com/">
+                              <img src="img/11.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://plus.google.com">
+                              <img src="img/7.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://linkedin.com/">
+                              <img src="img/1.png" height="40px" width="40px" class="link"></a>
+                            </li>
+                             <li><a href="http://twitter.com/">
+                              <img src="img/8.png" class="icon"></a></li>
+                                                         <button type="button" class="btn btn-info btn-md" id="myBtn3">me</button>
+   <!-- personal info over -->
+
+<!-- short bio ends here -->
+
+<!-- full bio of saket bakshi starts here : popup  -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><img src="bio/saketbio.jpg" class="img-bio"><center>
+          <h4 class="modal-title">Saket Saurabh</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Director of Training Operations</b>
+<br><br>
+Saket is a Windows enthusiast working in an IT company.  <br>
+Always contributing ideas from a technical, business, and social point of view, 
+Saket is in charge of testing system status, moderating the sessions, 
+and ensuring the smooth delivery of quality training. <br>When not at work, it’s all about traveling and mingling with different cultures while experimenting with Indian and other continental cuisine at home with family.
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><small>Exit</small></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+                        </ul>   
+                                 
+            </div>
+            <div class="panel-body"><p> Director of Training Operations</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of saket bakshi's full bio -->
+
+        <!-- short bio of mohit's starts -->
+                   <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3><img src="bio/mohitmeetnew.jpg" class = "person test" data-toggle="tooltip" data-placement="top" title="Mohit Bakshi"></img></h3>
+              <!-- personal info -->
+		<ul class="list-inline social-buttons">
+                            <li><a href="http://facebook.com/">
+                              <img src="img/11.png" class="icon"></a>
+                            </li>
+                            <li><a href="http://plus.google.com/">
+                              <img src="img/7.png" class="icon"></a>
+                            </li>
+                            </li>
+                            <li><a href="http://linkedin.com/">
+                              <img src="img/1.png" height="40px" width="40px" class="link"></a>
+                            </li>
+                             <li><a href="http://twitter.com/">
+                              <img src="img/8.png" class="icon"></a></li>
+                             <button type="button" class="btn btn-info btn-md" id="myBtn5">me</button>
+                             <!-- personal info over -->
+<!-- end of mohit's short bio -->
+
+<!-- full bio of mohit : popup -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><img src="bio/mohitmeetnew.jpg" class="img-bio"><center>
+          <h4 class="modal-title">Mohit Bakshi</h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Content Writer</b>
+<br><br>
+Mohit Bakshi is a Content writer.<br>
+He also work as a System Administrator at TechAspect.
+<br><br></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><small>Exit</small></button>
+        </div>
+      </div>
+                        </ul>
+                             
+            </div>
+            <div class="panel-body">
+<p>
+Content Writer</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- full bio of mohit is over -->
+          
+        </div>
+        
+      </div> <!-- /row -->
+      <div class="footer"></div>
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
 });
-var HEX_CRAD = 32,
-		HEX_BG = '#171717',
-		HEX_HL = '#2a2a2a',
-		HEX_HLW = 2,
-		HEX_GAP = 4,
-		NEON_PALETE = [
-				'#cb3301', '#ff0066',
-				'#ff6666', '#feff99',
-				'#ffff67', '#ccff66',
-				'#99fe00', '#fe99ff',
-				'#ff99cb', '#fe349a',
-				'#cc99fe', '#6599ff',
-				'#00ccff', '#ffffff'
-		],
-		T_SWITCH = 64,
-		unit_x = 3 * HEX_CRAD + HEX_GAP * sqrt(3),
-		unit_y = HEX_CRAD * sqrt(3) * .5 + .5 * HEX_GAP,
-		off_x = 1.5 * HEX_CRAD + HEX_GAP * sqrt(3) * .5,
-		wp = NEON_PALETE.map(function(c) {
-				var num = parseInt(c.replace('#', ''), 16);
-				return {
-						'r': num >> 16 & 0xFF,
-						'g': num >> 8 & 0xFF,
-						'b': num & 0xFF
-				};
-		}),
-		nwp = wp.length,
-		csi = 0,
-		f = 1 / T_SWITCH,
-		c = document.querySelectorAll('canvas'),
-		n = c.length,
-		w, h, _min,
-		ctx = [],
-		grid, source = null,
-		t = 0,
-		request_id = null;
-var GridItem = function(x, y) {
-		this.x = x || 0;
-		this.y = y || 0;
-		this.points = {
-				'hex': [],
-				'hl': []
-		};
-		this.init = function() {
-				var x, y, a, ba = PI / 3,
-						ri = HEX_CRAD - .5 * HEX_HLW;
-				for (var i = 0; i < 6; i++) {
-						a = i * ba;
-						x = this.x + HEX_CRAD * cos(a);
-						y = this.y + HEX_CRAD * sin(a);
-						this.points.hex.push({
-								'x': x,
-								'y': y
-						});
-						if (i > 2) {
-								x = this.x + ri * cos(a);
-								y = this.y + ri * sin(a);
-								this.points.hl.push({
-										'x': x,
-										'y': y
-								});
-						}
-				}
-		};
-		this.draw = function(ct) {
-				for (var i = 0; i < 6; i++) {
-						ct[(i === 0 ? 'move' : 'line') + 'To'](
-								this.points.hex[i].x,
-								this.points.hex[i].y
-						);
-				}
-		};
-		this.highlight = function(ct) {
-				for (var i = 0; i < 3; i++) {
-						ct[(i === 0 ? 'move' : 'line') + 'To'](
-								this.points.hl[i].x,
-								this.points.hl[i].y
-						);
-				}
-		};
-		this.init();
-};
-var Grid = function(rows, cols) {
-		this.cols = cols || 16;
-		this.rows = rows || 16;
-		this.items = [];
-		this.n = this.items.length;
-		this.init = function() {
-				var x, y;
-				for (var row = 0; row < this.rows; row++) {
-						y = row * unit_y;
-						for (var col = 0; col < this.cols; col++) {
-								x = ((row % 2 == 0) ? 0 : off_x) + col * unit_x;
-								this.items.push(new GridItem(x, y));
-						}
-				}
-				this.n = this.items.length;
-		};
-		this.draw = function(ct) {
-				ct.fillStyle = HEX_BG;
-				ct.beginPath();
-				for (var i = 0; i < this.n; i++) {
-						this.items[i].draw(ct);
-				}
-				ct.closePath();
-				ct.fill();
-				ct.strokeStyle = HEX_HL;
-				ct.beginPath();
-				for (var i = 0; i < this.n; i++) {
-						this.items[i].highlight(ct);
-				}
-				ct.closePath();
-				ct.stroke();
-		};
-		this.init();
-};
-var init = function() {
-		var s = getComputedStyle(c[0]),
-				rows, cols;
-		w = ~~s.width.split('px')[0];
-		h = ~~s.height.split('px')[0];
-		_min = .75 * min(w, h);
-		rows = ~~(h / unit_y) + 2;
-		cols = ~~(w / unit_x) + 2;
-		for (var i = 0; i < n; i++) {
-				c[i].width = w;
-				c[i].height = h;
-				ctx[i] = c[i].getContext('2d');
-		}
-		grid = new Grid(rows, cols);
-		grid.draw(ctx[1]);
-		if (!source) {
-				source = {
-						'x': ~~(w / 2),
-						'y': ~~(h / 2)
-				};
-		}
-		neon();
-};
-var neon = function() {
-		var k = (t % T_SWITCH) * f,
-				rgb = {
-						'r': ~~(wp[csi].r * (1 - k) +
-								wp[(csi + 1) % nwp].r * k),
-						'g': ~~(wp[csi].g * (1 - k) +
-								wp[(csi + 1) % nwp].g * k),
-						'b': ~~(wp[csi].b * (1 - k) +
-								wp[(csi + 1) % nwp].b * k)
-				},
-				rgb_str = 'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')',
-				light = ctx[0].createRadialGradient(
-						source.x, source.y, 0,
-						source.x, source.y, .875 * _min
-				),
-				stp;
-		stp = .5 - .5 * sin(7 * t * f) * cos(5 * t * f) * sin(3 * t * f);
-		light.addColorStop(0, rgb_str);
-		light.addColorStop(stp, 'rgba(0,0,0,.03)');
-		fillBackground('rgba(0,0,0,.02)');
-		fillBackground(light);
-		t++;
-		if (t % T_SWITCH === 0) {
-				csi++;
-				if (csi === nwp) {
-						csi = 0;
-						t = 0;
-				}
-		}
-		request_id = requestAnimationFrame(neon);
-};
-var fillBackground = function(bg_fill) {
-		ctx[0].fillStyle = bg_fill;
-		ctx[0].beginPath();
-		ctx[0].rect(0, 0, w, h);
-		ctx[0].closePath();
-		ctx[0].fill();
-};
-init();
-addEventListener('resize', init, false);
-addEventListener('mousemove', function(e) {
-		source = {
-				'x': e.clientX,
-				'y': e.clientY
-		};
-}, false);
+</script>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal({backdrop: true});
+    });
+    $("#myBtn1").click(function(){
+        $("#myModal1").modal({backdrop: true});
+    });
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal({backdrop: true});
+    });
+        $("#myBtn3").click(function(){
+        $("#myModal3").modal({backdrop: true});
+    });
+        $("#myBtn4").click(function(){
+        $("#myModal4").modal({backdrop: true});
+    });
+        $("#myBtn5").click(function(){
+        $("#myModal5").modal({backdrop: true});
+    });
+});
+</script>
+
+<a href="#home" id="toTop" class="scroll" style="display: block;">
+ <span id="toTopHover" style="opacity: 1;"> 
+ </span>
+</a>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+        */
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
 </script>
 </body>
 </html>
